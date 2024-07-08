@@ -25,6 +25,9 @@ input{
 img{
     width:100%;
 }
+.leaf{
+    width:1.5rem;
+}
 
 header{
     width:100%;
@@ -35,16 +38,24 @@ header{
     z-index:9;
     background:#fff;
     width:100%;
-    height:3rem;
+    height:4rem;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:10px;
+    box-shadow:0 1px 5px 1px rgba(0,0,0,.2);
+}
+.navbar .logo{
+    display:flex;
+    margin:5px;
 }
 .navbar ul{
     display:flex;
 }
-.navbar ul li a{
+.menu-btn{
+    display:none;
+}
+.menu li a{
     margin:5px;
     text-transform:capitalize;
     color:#000;
@@ -73,7 +84,7 @@ header{
     padding:2rem;
     width:100%;
 }
-.store-content > div{
+.store-content{
     border:1px solid #a7a7a7;
     border-radius:3px;
 }
@@ -151,5 +162,82 @@ header{
 .text .price{
     font-size:18px;
     font-weight:bolder;
+}
+
+/* Store footer */
+.store-footer{
+    background:#2b8646;
+    color:#fff;
+}
+.footer-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin:10px;
+}
+.footer-content h1{
+    font-size:18px;
+    margin:10px;
+}
+.property h2{
+    font-size:14px;
+}
+.btn{
+    display:flex;
+    background:none;
+}
+.btn button{
+    background:#dadadacc;
+    padding:10px;
+    margin:5px;
+    border-radius:50%;
+}
+.btn button img{
+    width:1.2rem;
+}
+
+/* Media Queries */
+@media screen and (max-width:720px){
+    .menu{
+        position:absolute;
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        top:4rem;
+        left:10rem;
+        opacity:0;
+        transform:scale(0);
+        background:#6bff97;
+        padding:5px;
+        transition: .2s ease-in;
+    }
+    .menu.active{
+        opacity:1;
+        transform:scale(1);
+    }
+    .menu-btn{
+        display:block;
+        cursor:pointer;
+        padding:5px;
+        margin:5px;
+    }
+    .close-btn{
+        display:none;
+    }
+    .menu-btn.active .open-btn{
+        display:none;
+    }
+    .menu-btn.active .close-btn{
+        display:block;
+    }
+    .search-icon{
+        border:2px solid #b6b6b6b9;
+        border-radius:10px;
+        width:15rem;
+    }
+    .search-icon button{
+        padding:3px;
+    }
 }
 
