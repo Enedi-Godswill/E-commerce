@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:tahoma;
+}
+button{
+    outline:none;
+    border:none;
+    background:none;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+img{
+    width:100%;
+}
+
+header{
+    width:100%;
+    height:100vh;
+}
+.navbar{
+    position:fixed;
+    width:100%;
+    height:3rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+}
+.navbar ul{
+    display:flex;
+}
+.navbar ul li a{
+    margin:5px;
+    text-transform:capitalize;
+    color:#000;
+}
+.person-icon button{
+    border:1px solid #000;
+    border-radius:50%;
+    padding:5px;
+}
+.person-icon .cart{
+    background:#6bff97;
+    border:none;
+}
+
+/* Store info */
+.store-info{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    width:100%;
+}
+.store-content{
+    display:grid;
+    grid-template-columns:20% 80%;
+    padding:2rem;
+    width:100%;
+}
+.store-content > div{
+    border:1px solid #a7a7a7;
+    border-radius:3px;
+}
+.store-data{
+    height:60vh;
+}
+.store-top{
+    padding:10px;
+    height:30%;
+}
+.store-top h1{
+    font-size:16px;
+    text-transform:uppercase;
+}
+.store-bottom{
+    background:#cfffd6;
+    height:70%;
+}
+.store-bottom-info{
+    padding:10px;
+}
+.store-bottom-info h1{
+    font-size:16px;
+    text-transform:uppercase;
+}
+.tags{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px;
+    background:#fcfcfc;
+    margin-top:10px;
+    border-radius:5px;
+}
+.tags p{
+    font-size:14px;
+    text-transform:capitalize;
+}
+.tags img{
+    width:1.5rem;
+}
+
+/* Store products */
+.store-products{
+    height:80vh;
+}
+
+
