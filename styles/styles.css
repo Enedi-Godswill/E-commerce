@@ -112,5 +112,14 @@ header{
 .store-products{
     height:80vh;
 }
+.product-content{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    align-items:center;
+}
+.product-tag{
+    height:13rem;
+    padding:1rem;
+}
 
 
