@@ -38,12 +38,20 @@ header{
     z-index:9;
     background:#fff;
     width:100%;
-    height:4rem;
+    height:5rem;
+    box-shadow:0 1px 5px 1px rgba(0,0,0,.2);
+}
+.navbar h1{
+    margin:0;
+    padding:0;
+    font-size:18px;
+    color:green;
+}
+.navbar-contents{
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:10px;
-    box-shadow:0 1px 5px 1px rgba(0,0,0,.2);
 }
 .navbar .logo{
     display:flex;
@@ -72,6 +80,7 @@ header{
 
 /* Store info */
 .store-info{
+    padding-top:3rem;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -113,18 +122,39 @@ header{
 .tags{
     display:flex;
     justify-content:space-between;
+    flex-direction:column;
     align-items:center;
     padding:5px;
     background:#fcfcfc;
-    margin-top:10px;
+    margin:5px;
     border-radius:5px;
 }
-.tags p{
+.inputEl.active{
+    display:block;
+    border:2px solid #4b4b4b;
+    padding:5px;
+    border-radius:5px;
+    width:5rem;
+    background:#fff;
+}
+.tag-text{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2px;
+}
+.down-btn{
+    cursor:pointer;
+}
+.tag-text p{
     font-size:14px;
     text-transform:capitalize;
 }
 .tags img{
     width:1.5rem;
+}
+.tags input{
+    display:none;
 }
 
 /* Store products */
@@ -199,13 +229,17 @@ header{
 
 /* Media Queries */
 @media screen and (max-width:720px){
+    .logo{
+        display:flex;
+        flex-direction:column;
+    }
     .menu{
         position:absolute;
         display:flex;
         justify-content:center;
         flex-direction:column;
-        top:4rem;
-        left:10rem;
+        top:5rem;
+        left:.5rem;
         opacity:0;
         transform:scale(0);
         background:#6bff97;
@@ -221,6 +255,7 @@ header{
         cursor:pointer;
         padding:5px;
         margin:5px;
+        width:2rem;
     }
     .close-btn{
         display:none;
@@ -231,6 +266,9 @@ header{
     .menu-btn.active .close-btn{
         display:block;
     }
+    .down-btn .active{
+        display:block;
+    }
     .search-icon{
         border:2px solid #b6b6b6b9;
         border-radius:10px;
@@ -238,6 +276,9 @@ header{
     }
     .search-icon button{
         padding:3px;
+    }
+    .store-content .store-products{
+        display:block;
     }
 }
 

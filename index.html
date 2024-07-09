@@ -10,34 +10,35 @@
 
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <h1>
-                    <img class="leaf" src="./icons/Leaf.png" alt="">
-                    EcoGoods
-                </h1>
+            <h1>
+                <img class="leaf" src="./icons/Leaf.png" alt="">
+                EcoGoods
+            </h1>
+            <div class="navbar-contents">
                 <button class="menu-btn" id="menu-btn">
                     <img class="open-btn" src="./icons/menu.svg" alt="">
                     <img class="close-btn" src="./icons/close.svg" alt="">
                 </button>
+                <ul class="menu" id="menu">
+                    <li class="nav-list"><a href="#">product</a></li>
+                    <li class="nav-list"><a href="#">about</a></li>
+                    <li class="nav-list"><a href="#">contact</a></li>
+                </ul>
+                <div class="search-icon">
+                    <button class="search">
+                        <img src="./icons/search.svg" alt="">
+                    </button>
+                </div>
+                <div class="person-icon">
+                    <button class="cart">
+                        <img src="./icons/shopping_cart.svg" alt="">
+                    </button>
+                    <button class="person">
+                        <img src="./icons/person.svg" alt="">
+                    </button>
+                </div>
             </div>
-            <ul class="menu" id="menu">
-                <li class="nav-list"><a href="#">product</a></li>
-                <li class="nav-list"><a href="#">about</a></li>
-                <li class="nav-list"><a href="#">contact</a></li>
-            </ul>
-            <div class="search-icon">
-                <button class="search">
-                    <img src="./icons/search.svg" alt="">
-                </button>
-            </div>
-            <div class="person-icon">
-                <button class="cart">
-                    <img src="./icons/shopping_cart.svg" alt="">
-                </button>
-                <button class="person">
-                    <img src="./icons/person.svg" alt="">
-                </button>
-            </div>
+            
             
         </nav>
 
@@ -59,21 +60,27 @@
                         <div class="store-bottom-info">
                             <h1>filter</h1>
                             <div class="tags">
-                                <p>price</p>
-                                <img src="./icons/bx-chevron-down.svg" alt="">
+                                <div class="tag-text">
+                                    <p>price</p>
+                                    <img class="down-btn" src="./icons/bx-chevron-down.svg" alt="">
+                                </div>
+                                <input class="inputEl" type="text" placeholder="price">
                             </div>
                             <div class="tags">
-                                <p>popularity</p>
-                                <img src="./icons/bx-chevron-down.svg" alt="">
+                                <div class="tag-text">
+                                    <p>price</p>
+                                    <img class="down-btn" src="./icons/bx-chevron-down.svg" alt="">
+                                </div>
+                                <input class="inputEl" type="text" placeholder="price">
                             </div>
                             <div class="tags">
-                                <p>new arrivals</p>
-                                <img src="./icons/bx-chevron-down.svg" alt="">
+                                <div class="tag-text">
+                                    <p>Popularity</p>
+                                    <img class="down-btn" src="./icons/bx-chevron-down.svg" alt="">
+                                </div>
+                                <input class="inputEl" type="text" placeholder="price">
                             </div>
-                            <div class="tags">
-                                <p>ratings</p>
-                                <img src="./icons/bx-chevron-down.svg" alt="">
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
