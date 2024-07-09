@@ -38,8 +38,12 @@ header{
     z-index:9;
     background:#fff;
     width:100%;
-    height:5rem;
+    height:4rem;
     box-shadow:0 1px 5px 1px rgba(0,0,0,.2);
+}
+.first{
+    display:flex;
+    gap:10px;
 }
 .navbar h1{
     margin:0;
@@ -236,6 +240,7 @@ header{
 
 /* Media Queries */
 @media screen and (max-width:720px){
+    
     .logo{
         display:flex;
         flex-direction:column;
@@ -245,8 +250,8 @@ header{
         display:flex;
         justify-content:center;
         flex-direction:column;
-        top:5rem;
-        left:.5rem;
+        top:4rem;
+        left:8.4rem;
         opacity:0;
         transform:scale(0);
         background:#6bff97;
