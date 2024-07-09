@@ -9,12 +9,6 @@ const toggleBtn = () => {
 
 menuBtn.addEventListener("click", toggleBtn);
 
-// Sort Section
-const downBtns = document.querySelectorAll(".down-btn");
-const inputEls = document.querySelectorAll(".inputEl");
-function showInput() {
-    inputEls.classList.toggle("active");
-}
-downBtns.addEventListener("click", showInput);
+
 
 

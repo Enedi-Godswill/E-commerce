@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./icons/Leaf.png" sizes="32x32"  type="img/png">
     <title>EcoGoods</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
         <nav class="navbar">
             <h1>
                 <img class="leaf" src="./icons/Leaf.png" alt="">
-                EcoGoods
+                <a href="./index.html">EcoGoods</a>
             </h1>
             <div class="navbar-contents">
                 <button class="menu-btn" id="menu-btn">
@@ -20,7 +21,7 @@
                     <img class="close-btn" src="./icons/close.svg" alt="">
                 </button>
                 <ul class="menu" id="menu">
-                    <li class="nav-list"><a href="#">product</a></li>
+                    <li class="nav-list"><a href="./products/index.html">product</a></li>
                     <li class="nav-list"><a href="#">about</a></li>
                     <li class="nav-list"><a href="#">contact</a></li>
                 </ul>
@@ -31,7 +32,9 @@
                 </div>
                 <div class="person-icon">
                     <button class="cart">
-                        <img src="./icons/shopping_cart.svg" alt="">
+                        <a href="./checkout/index.html">
+                            <img src="./icons/shopping_cart.svg" alt="">
+                        </a>
                     </button>
                     <button class="person">
                         <img src="./icons/person.svg" alt="">
@@ -49,7 +52,7 @@
                     <!-- The top part of the store -->
                     <div class="store-top">
                         <h1>sort</h1>
-                        <div class="tags">
+                        <div class="first-tag">
                             <p>what's new</p>
                             <img src="./icons/bx-chevron-down.svg" alt="">
                         </div>
@@ -75,11 +78,19 @@
                             </div>
                             <div class="tags">
                                 <div class="tag-text">
-                                    <p>Popularity</p>
+                                    <p>price</p>
                                     <img class="down-btn" src="./icons/bx-chevron-down.svg" alt="">
                                 </div>
                                 <input class="inputEl" type="text" placeholder="price">
                             </div>
+                            <div class="tags">
+                                <div class="tag-text">
+                                    <p>price</p>
+                                    <img class="down-btn" src="./icons/bx-chevron-down.svg" alt="">
+                                </div>
+                                <input class="inputEl" type="text" placeholder="price">
+                            </div>
+                            
                             
                         </div>
                     </div>
@@ -193,7 +204,6 @@
                 </div>
             </div>
         </div>
-        
     </header>
 
     
